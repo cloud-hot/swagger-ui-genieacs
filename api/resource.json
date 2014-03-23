@@ -4,7 +4,27 @@
   "apis": [
     {
       "path": "/devices",
-      "description": "Genieacs Devices related API"
+      "description": "Genieacs devices related API"
+    },
+    {
+      "path": "/files",
+      "description": "Genieacs files related API"
+    },
+    {
+      "path": "/presets",
+      "description": "Genieacs preset related API"
+    },
+    {
+      "path": "/objects",
+      "description": "Genieacs object related API"
+    },
+    {
+      "path": "/tasks",
+      "description": "Genieacs task related API"
+    },
+    {
+      "path": "/ping",
+      "description": "Genieacs ping tool related API"
     }
   ],
   "authorizations": {
