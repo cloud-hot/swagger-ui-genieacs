@@ -14,8 +14,21 @@
                     "summary": "Query operation",
                     "notes": "Response is json formate",
                     "nickname": "QueryDevices",
-                    "parameters": [],
-                    "errorResponses": [
+                    "parameters": [
+                        {
+                            "name": "_id",
+                            "description": "Device id",
+                            "paramType": "query",
+                            "required": false,
+                            "allowMultiple": false,
+                            "allowableValues": {
+                                "_id": "FFFFFF-freecwmp-FFFFFF123456"
+                            },
+                            "defaultValue": "json",
+                            "dataType": "string"
+                        }
+                    ],
+		    "errorResponses": [
                         {
                             "code": 400,
                             "reason": "Invalid ID supplied"
