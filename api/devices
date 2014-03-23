@@ -1,0 +1,36 @@
+{
+    "apiVersion": "1",
+    "swaggerVersion": "1.1",
+    "basePath": "http://10.0.1.10:7557",
+    "notes": "Genieacs devices API",
+    "resourcePath": "/devices",
+    "apis": [
+        {
+            "path": "/devices",
+            "description": "Query all the available devices information",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "summary": "Query operation",
+                    "notes": "Response is json formate",
+                    "nickname": "QueryDevices",
+                    "parameters": [],
+                    "errorResponses": [
+                        {
+                            "code": 400,
+                            "reason": "Invalid ID supplied"
+                        },
+                        {
+                            "code": 403,
+                            "reason": "Resource Access Denied"
+                        },
+                        {
+                            "code": 404,
+                            "reason": "Resource not found"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

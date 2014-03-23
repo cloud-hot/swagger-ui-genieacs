@@ -1,0 +1,49 @@
+{
+    "apiVersion": "1",
+    "swaggerVersion": "1.1",
+    "basePath": "http://10.0.1.10:7557",
+    "notes": "Google Book Search API",
+    "resourcePath": "/objects",
+    "apis": [
+        {
+            "path": "/objects",
+            "description": "Query all the available devices information",
+            "operations": [
+                {
+                    "httpMethod": "GET",
+                    "summary": "Query operation",
+                    "notes": "Response is json formate",
+                    "nickname": "QueryDevices",
+                    "parameters": [
+                        {
+                            "name": "_id",
+                            "description": "Device id",
+                            "paramType": "query",
+                            "required": false,
+                            "allowMultiple": false,
+                            "allowableValues": {
+                                "_id": "FFFFFF-freecwmp-FFFFFF123456"
+                            },
+                            "defaultValue": "json",
+                            "dataType": "string"
+                        },
+                    ],
+                    "errorResponses": [
+                        {
+                            "code": 400,
+                            "reason": "Invalid ID supplied"
+                        },
+                        {
+                            "code": 403,
+                            "reason": "Resource Access Denied"
+                        },
+                        {
+                            "code": 404,
+                            "reason": "Resource not found"
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
+}
